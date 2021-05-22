@@ -44,13 +44,16 @@ nav{
     display: none;
     font-weight: lighter;
     font-size: 15px;
+    border-radius: 3px;
     padding: 16px;
+    margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
 #togNew{
     font-weight: lighter;
     margin: 10px;
+    border-radius: 3px;
     margin-bottom: 20px;
     display: flex;
     justify-content: center;
