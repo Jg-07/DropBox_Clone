@@ -5,11 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="hum.css">
+    <link href="dist/hamburgers.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
+    <nav class="navContents">
+        <div class="navItem"><img src="boxNormal.svg" alt="">DropBox <br><span
+                style="color: #0061ff; font-weight: lighter;">Business</span></div>
+        <div style="display: flex;align-items: center;">
+            <div class="navItem1" id="TryNew" style="margin-right: 0px;">Try it for free</div>
+            <button class="navItem hamburger hamburger--squeeze" type="button" id="humb">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
 
+        </div>
+    </nav>
+    <div class="togContents hidden fadeopen">
+        <div class="navItem" id="togNew">Try it for free</div>
+        <div class="togItem"><span style="z-index: 999;">Pricing</span></div>
+        <div class="togItem"><span style="z-index: 999;">Compare plans</span></div>
+        <div class="togItem"><span style="z-index: 999;">Features</span></div>
+        <div class="togItem"><span style="z-index: 999;">Learn More</span></div>
+        <div class="togItem"><span style="z-index: 999;">Contact sales</span></div>
+    </div>
+    <div>
+        <div></div>
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

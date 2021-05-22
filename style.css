@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    transform: 0.6s all 0s ease;
+}
+body{
+    background-color: #b4d0e7;
+}
+nav{
+    background-color: #b4d0e7;
+}
+.navItem{
+    cursor: pointer;
+   display: flex;
+   font-family: 'Lato';
+   font-weight:bolder;
+   font-stretch:20px;
+   font-size: x-large;
+   margin: 20px;
+   align-items: center;
+}
+.navItem1{
+    cursor: pointer;
+    display: flex;
+    font-family: 'Lato';
+    font-weight:bolder;
+    font-stretch:20px;
+    font-size: x-large;
+    background-color: white;
+    margin: 20px;
+    align-items: center;
+ }
+.navItem span{
+    margin-left: 3px;
+}
+.navItem img{
+    margin-right: 6px;
+    width: 35px;
+    height: 35px;
+}
+#TryNew{
+    display: none;
+    font-weight: lighter;
+    font-size: 15px;
+    padding: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#togNew{
+    font-weight: lighter;
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    color: white;
+    padding: 37%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color:#0061ff;
+}
+#togNew:active{
+    opacity: 0.4;
+}
+.hum1,.hum2,.hum3{
+    background-color: black;
+    width: 21px;
+    margin: 2.5px;
+    height: 2px;
+}
+.navContents{
+    display: flex;
+    justify-content: space-between;
+}
+.togContents{
+    align-items: left;
+    opacity: 0;
+    margin: 0px;
+    z-index: -2;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    height: 100vh;
+}
+.togItem{
+    cursor: pointer;
+    margin: 10px;
+    margin-left: 0px;
+    z-index: 1;
+    margin-right: 0px;
+    padding: 20px;
+    font-size:x-large;
+    font-family: "Lato";
+}
+.togItem::before{
+    content: '';
+    width: 100%;
+    z-index: -1;
+    background-color:#c4dff5;
+    position: absolute;
+    height: 70px;
+    margin-top: -18px;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all 0.6s ease-in-out;
+    left:0;
+}
+.togItem:hover::before{
+    transform: scaleX(1);
+}
+.fadeopen{
+    animation-name: fade;
+    animation-duration: 0.4s;
+    transform-origin: top;
+    transition: 0.8s all 0s ease-in;
+    opacity: 1;
+}
+.stopOverflow{
+    overflow: hidden;
+}
+@keyframes fade{
+   0%{
+       opacity: 0;
+   }
+   30%{
+       opacity: 0.2;
+   }
+   70%{
+       opacity: 0.6;
+   }
+   100%{
+       opacity: 1;
+   }
+}
+@media (min-width:800px){
+    #togNew{
+        display: none;
+    }
+    #TryNew{
+        display: block;
+    }
+}
+@media (max-width:800px){
+    #togNew{
+        margin-top: 30px;
+        padding: 20%;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .togContents{
+       text-align: center;
+    }
+    .togItem{
+        padding: 10px;
+    }
+}
+.hidden{
+    display: none;
+}
+.colChange1{
+    background: #0061ff;
+    color: white;
+}
+.colChange2{
+    background-color: white;
+    color: black;
+}
