@@ -27,4 +27,13 @@ Humb.addEventListener('click', function () {
         togBar.classList.add('fadeopen');
     }
 });
-
+window.onscroll = function () {
+    if (window.scrollY == 0) {
+        tryN.classList.remove('colChange1');
+        nav.classList.remove('colChange2');
+    }
+    else {
+        tryN.classList.add('colChange1');
+        nav.classList.add('colChange2');
+    }
+}

@@ -7,7 +7,9 @@
 }
 nav{
     background-color: #b4d0e7;
+    transition: 0.5s all 0s ease;
 }
+
 .navItem{
     cursor: pointer;
    display: flex;
@@ -46,6 +48,12 @@ nav{
     margin-top: 15px;
     padding-top: 5px;
     padding-bottom: 5px;
+}
+#TryNew:active{
+    opacity: 0.4;
+}
+#TryNew:hover{
+    opacity: 0.8;
 }
 #togNew{
     font-weight: lighter;
@@ -132,6 +140,7 @@ nav{
     margin: 0px;
     top: -21px;
     padding: 30PX;
+    height: 102vh;
     position: absolute;
     z-index: -5;
     margin-top: 100px;
@@ -140,27 +149,59 @@ nav{
 .mainBlock .blockHead{
     margin: 10px;
     z-index: -4;
+    margin-bottom: 25px;
     font-family: oswald;
     font-weight:bolder;
-    font-size: 83px;
+    font-size: 6.4vmax;
 }
 .block1{
     z-index: -4;
     margin: 10px;
+    margin-right: 30px;
     display: flex;
     flex-direction: row;
 }
 .block3 img{
+    margin-top: 12%;
+    margin-left: 5%;
     z-index: -4;
-    width: 48em;
-    margin-left: 40px;
+    width:80%;
+    transform: scale(1.5);
 }
 .block2 .con1{
     z-index: -4;
-    font-size: 20px;
+    font-size: 110%;
     margin: 0px;
+    padding-right: 40%;
     font-family: lato;
-    margin-right: 20px;
+}
+.block2 .con2{
+    cursor: pointer;
+    font-family: 'Lato';
+    font-weight:lighter;
+    font-size: large;
+    background-color: #0061ff;
+    margin-top: 30px;
+    width: 9em;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+.block2 .con2:hover{
+    opacity: 0.8;
+}
+.block2 .con2:active{
+    opacity: 0.2;
+}
+.block2 .con2::after{
+    display: flex;
+    margin: 20px;
+    color: black;
+    font-size:medium;
+    padding: 0px;
+    margin-left: -10px;
+    content: 'No credit card needed';
+    position: absolute;
 }
 @keyframes fade{
    0%{
@@ -191,6 +232,9 @@ nav{
         padding-top: 15px;
         padding-bottom: 15px;
     }
+    .mainBlock{
+       height: auto;
+    }
     .mainBlock .blockHead{
         font-size: 45px;
     }
@@ -199,6 +243,7 @@ nav{
     }
     .block2 .con1{
         font-size: 18px;
+        padding-right: 0;
     }
     .togContents{
        text-align: center;
