@@ -27,3 +27,4 @@ Humb.addEventListener('click', function () {
         togBar.classList.add('fadeopen');
     }
 });
+

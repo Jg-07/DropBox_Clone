@@ -5,9 +5,6 @@
     padding: 0px;
     transform: 0.6s all 0s ease;
 }
-body{
-    background-color: #b4d0e7;
-}
 nav{
     background-color: #b4d0e7;
 }
@@ -75,13 +72,19 @@ nav{
 }
 .navContents{
     display: flex;
+    position: fixed;
+    width: 100%;
+    top:0px;
     justify-content: space-between;
 }
 .togContents{
     align-items: left;
+    position: fixed;
+    width: 100%;
+    top:79px;
     opacity: 0;
     margin: 0px;
-    z-index: -2;
+    z-index: -3;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -123,6 +126,42 @@ nav{
 .stopOverflow{
     overflow: hidden;
 }
+.mainBlock{
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    top: -21px;
+    padding: 30PX;
+    position: absolute;
+    z-index: -5;
+    margin-top: 100px;
+    background-color: #b4d0e7;
+}
+.mainBlock .blockHead{
+    margin: 10px;
+    z-index: -4;
+    font-family: oswald;
+    font-weight:bolder;
+    font-size: 83px;
+}
+.block1{
+    z-index: -4;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.block3 img{
+    z-index: -4;
+    width: 48em;
+    margin-left: 40px;
+}
+.block2 .con1{
+    z-index: -4;
+    font-size: 20px;
+    margin: 0px;
+    font-family: lato;
+    margin-right: 20px;
+}
 @keyframes fade{
    0%{
        opacity: 0;
@@ -151,6 +190,15 @@ nav{
         padding: 20%;
         padding-top: 15px;
         padding-bottom: 15px;
+    }
+    .mainBlock .blockHead{
+        font-size: 45px;
+    }
+    .block3{
+        display: none;
+    }
+    .block2 .con1{
+        font-size: 18px;
     }
     .togContents{
        text-align: center;
