@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 *{
     margin: 0px;
     padding: 0px;
@@ -82,6 +83,7 @@ nav{
     display: flex;
     position: fixed;
     width: 100%;
+    z-index: 1;
     top:0px;
     justify-content: space-between;
 }
@@ -92,7 +94,7 @@ nav{
     top:79px;
     opacity: 0;
     margin: 0px;
-    z-index: -3;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -117,7 +119,7 @@ nav{
     height: 70px;
     margin-top: -18px;
     transform: scaleX(0);
-    transform-origin: left;
+    transform-origin:left;
     transition: all 0.6s ease-in-out;
     left:0;
 }
@@ -138,24 +140,22 @@ nav{
     display: flex;
     flex-direction: column;
     margin: 0px;
-    top: -21px;
+    z-index: -1;
     padding: 30PX;
-    height: 102vh;
-    position: absolute;
-    z-index: -5;
-    margin-top: 100px;
+    height: 100%;
+    margin-top: 70px;
     background-color: #b4d0e7;
 }
 .mainBlock .blockHead{
     margin: 10px;
-    z-index: -4;
+    z-index: 0;
     margin-bottom: 25px;
     font-family: oswald;
     font-weight:bolder;
     font-size: 6.4vmax;
 }
 .block1{
-    z-index: -4;
+    z-index: 0;
     margin: 10px;
     margin-right: 30px;
     display: flex;
@@ -163,13 +163,13 @@ nav{
 }
 .block3 img{
     margin-top: 12%;
-    margin-left: 5%;
+    margin-left: 2%;
     z-index: -4;
     width:80%;
     transform: scale(1.5);
 }
 .block2 .con1{
-    z-index: -4;
+    z-index: 0;
     font-size: 110%;
     margin: 0px;
     padding-right: 40%;
@@ -202,6 +202,63 @@ nav{
     margin-left: -10px;
     content: 'No credit card needed';
     position: absolute;
+}
+.block2 .con3 img{
+   width: 60px;
+   transform: rotateZ(90deg);
+}
+.block2 .con3{
+    margin: 100px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+}
+.block2 .con4{
+    font-family: lato;
+    margin: 50px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.infoBlock{
+    padding: 40px;
+    margin: 5%;
+    margin-top: 8%;
+    z-index: 0;
+}
+.infoGrid{
+    display: grid;
+    font-family: lato;
+    margin-top: 50px;
+    grid-row-gap: 3%;
+    grid-column-gap: 7%;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    grid-template-rows: 1fr 1fr;
+}
+.infoGrid img{
+    width: 100%;
+}
+.infoBlock .infoHead{
+    font-family: lato;
+    font-size: 3.9vmax;
+    font-weight:700;
+}
+.infoGrid h1{
+    font-size: 5vh;
+    margin-bottom: 25px;
+}
+.infoGrid div{
+    font-size:large;
+}
+.honorBlock{
+   padding: 8%;
+   font-family: lato;
+}
+.honorBlock .hB1{
+   font-weight: bold;
+   margin-bottom: 30px;
+   font-size: 3.9vmax;
+}
+.honorBlock a{
+    font-size: large;
 }
 @keyframes fade{
    0%{
@@ -241,15 +298,24 @@ nav{
     .block3{
         display: none;
     }
+    .block2{
+        margin-bottom: 100px;
+    }
     .block2 .con1{
         font-size: 18px;
         padding-right: 0;
+    }
+    .block2 .con3{
+        display: none;
     }
     .togContents{
        text-align: center;
     }
     .togItem{
         padding: 10px;
+    }
+    .infoGrid{
+        grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
     }
 }
 .hidden{
@@ -261,5 +327,6 @@ nav{
 }
 .colChange2{
     background-color: white;
+    box-shadow: 2px 2px 3px 1px #b4d0e7;
     color: black;
 }
