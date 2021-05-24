@@ -5,7 +5,7 @@
 
 ## Discription : ⚙_⚙
 <p>
-   This is a project whicch is completely based on <i><b>Vanilla JS, HTML5 & CSS3👨‍💻👩‍💻</b></i><br>
+   This is a project whicch is completely based on <i><b>Vanilla JS, HTML5 & CSS3👨‍💻👩‍💻</b></i><br><br>
    The basic objective of making this project is to learn the power of Basic front-end tools like JS,HTML & CSS. Without using any addtional frameworks. Through this project we can learn some concepts like CSS grids ,Media Queries,Responsiveness, basic HTML tags and also Document object model in JavaScript.
    I have also made some significant changes to the UI section of the original page in my clone in-order to provide better responsiveness and User experience.Hope you would love my work.
 </p>
