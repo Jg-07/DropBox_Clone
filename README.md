@@ -14,7 +14,7 @@
 <p>
    Share your suggestions or some additional improvements that I could include in my work. This can be done through the issues section in the github tabs of my repository.
 </p>
-<br><br>
+<br>
 <hr>
 <br><br>
 # Link of the site :: <br> https://jg-07.github.io/DropBox_Clone/
