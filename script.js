@@ -3,6 +3,7 @@ let body = document.querySelector("body");
 let nav = document.querySelector(".navContents");
 let tryN = document.querySelector("#TryNew");
 let togBar = document.querySelector(".togContents");
+let arrow = document.querySelector(".con3");
 let a = [];
 let c = 0;
 Humb.addEventListener('click', function () {
@@ -37,3 +38,9 @@ window.onscroll = function () {
         nav.classList.add('colChange2');
     }
 }
+arrow.addEventListener('click', function () {
+    window.scrollTo({
+        top: 700,
+        behavior: "smooth",
+    })
+});

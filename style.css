@@ -102,11 +102,11 @@ nav{
 }
 .togItem{
     cursor: pointer;
-    margin: 10px;
+    margin: 2vh;
     margin-left: 0px;
     z-index: 1;
     margin-right: 0px;
-    padding: 20px;
+    padding: 2vh;
     font-size:x-large;
     font-family: "Lato";
 }
@@ -208,7 +208,7 @@ nav{
    transform: rotateZ(90deg);
 }
 .block2 .con3{
-    margin: 100px;
+    margin: 60px;
     margin-bottom: 0px;
     margin-left: 20px;
 }
@@ -238,7 +238,7 @@ nav{
 }
 .infoBlock .infoHead{
     font-family: lato;
-    font-size: 3.9vmax;
+    font-size: 6vh;
     font-weight:700;
 }
 .infoGrid h1{
@@ -246,7 +246,7 @@ nav{
     margin-bottom: 25px;
 }
 .infoGrid div{
-    font-size:large;
+    font-size:3vh;
 }
 .honorBlock{
    padding: 8%;
@@ -255,7 +255,7 @@ nav{
 .honorBlock .hB1{
    font-weight: bold;
    margin-bottom: 30px;
-   font-size: 3.9vmax;
+   font-size: 5.5vh;
 }
 .honorBlock a{
     font-size: large;
@@ -316,6 +316,7 @@ nav{
     }
     .infoGrid{
         grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
+        margin-bottom: 70vh;
     }
 }
 .hidden{
@@ -327,6 +328,6 @@ nav{
 }
 .colChange2{
     background-color: white;
-    box-shadow: 2px 2px 3px 1px #b4d0e7;
+    box-shadow: 1px 1px 3px 1px #b4d0e7;
     color: black;
 }
