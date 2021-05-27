@@ -4,6 +4,7 @@ let nav = document.querySelector(".navContents");
 let tryN = document.querySelector("#TryNew");
 let togBar = document.querySelector(".togContents");
 let arrow = document.querySelector(".con3");
+let mainBox = document.querySelector(".main");
 let a = [];
 let c = 0;
 Humb.addEventListener('click', function () {
@@ -44,3 +45,4 @@ arrow.addEventListener('click', function () {
         behavior: "smooth",
     })
 });
+

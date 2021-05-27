@@ -271,13 +271,22 @@ nav{
     grid-template-rows: repeat(3,16vw);
 }
 .box{
-    background-color: darkorange;
+    background-color:rgb(240, 240, 240);
     display: flex;
     font-size: 50px;
     font-weight: bold;
     justify-content: center;
     align-items: center;
-    box-shadow: 2px 2px 10px 2px rgb(206, 134, 52) inset;
+}
+.box img{
+    width: 70%;
+    display: block;
+    margin: auto;
+     filter: invert(1);
+}
+
+.box3 img{
+    width: 50%;
 }
 .box1{
    grid-column: 1/5;
@@ -312,6 +321,7 @@ nav{
      grid-row: 2/3;
  }
 .main{
+    display: flex;
     grid-column: 9/17;
      grid-row: 1/3;
 }
