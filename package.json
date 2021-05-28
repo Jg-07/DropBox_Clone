@@ -1,0 +1,23 @@
+{
+  "name": "dropbox",
+  "version": "1.0.0",
+  "description": "<img src=\"Frame 2 (1).png\" width=\"100%\">\r <br>",
+  "main": "script.js",
+  "scripts": {
+    "start": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\""
+  },
+  "devdependencies": {
+    "browser-sync": "^2.26.13"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jg-07/DropBox_Clone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jg-07/DropBox_Clone/issues"
+  },
+  "homepage": "https://github.com/Jg-07/DropBox_Clone#readme"
+}
