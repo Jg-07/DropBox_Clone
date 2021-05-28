@@ -5,6 +5,7 @@ let tryN = document.querySelector("#TryNew");
 let togBar = document.querySelector(".togContents");
 let arrow = document.querySelector(".con3");
 let mainBox = document.querySelector(".main");
+let boxs = document.querySelectorAll(".box");
 let a = [];
 let c = 0;
 Humb.addEventListener('click', function () {
@@ -46,3 +47,10 @@ arrow.addEventListener('click', function () {
     })
 });
 
+window.addEventListener('click', function (event) {
+    while (event.target != boxs) {
+        for (let i = 0; i < 8; i++) {
+            b1.classList.add("border");
+        }
+    }
+})
