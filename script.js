@@ -47,10 +47,3 @@ arrow.addEventListener('click', function () {
     })
 });
 
-window.addEventListener('click', function (event) {
-    while (event.target != boxs) {
-        for (let i = 0; i < 8; i++) {
-            b1.classList.add("border");
-        }
-    }
-})
