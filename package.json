@@ -1,0 +1,16 @@
+{
+    "name": "css-grid",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "run-script-os",
+        "start:win32": "browser-sync start --server --files '**/*.css, **/*.html, **/*.js, !node_modules/**/*' --directory --port 7777 --browser \"C:\\Program Files\\Firefox Developer Edition\\firefox.exe\""
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "browser-sync": "^2.26.13",
+        "run-script-os": "^1.1.5"
+    }
+}
