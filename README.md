@@ -1,6 +1,6 @@
 # DropBox-Clone 📦➡️🚀 (Under Construction)
 
-<img src="Frame 2 (1).png" width="100%">
+<img src="Images/Frame 2 (1).png" width="100%">
 <br>
 
 ## Discription : ⚙_⚙
