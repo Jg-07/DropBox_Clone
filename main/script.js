@@ -8,6 +8,11 @@ let mainBox = document.querySelector(".main");
 let boxs = document.querySelectorAll(".box");
 let a = [];
 let c = 0;
+let BillMonth = document.querySelector("#BillMonthly")
+let BillYear = document.querySelector("#BillYearly")
+let adv = document.querySelector(".pbox1 .cont3")
+let std = document.querySelector(".pbox2 .cont3")
+
 Humb.addEventListener('click', function () {
     a = Humb.classList;
     c = 0;
@@ -47,3 +52,12 @@ arrow.addEventListener('click', function () {
     })
 });
 
+BillYear.addEventListener('click', function () {
+    std.innerText = '$12.5';
+    adv.innerText = '$20'
+})
+
+BillMonth.addEventListener('click', function () {
+    std.innerText = '$15';
+    adv.innerText = '$25';
+})

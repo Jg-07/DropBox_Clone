@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
 @font-face {font-family: "Sharp Grotesk DB Cyr Book 20"; src: url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.eot"); src: url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.woff") format("woff"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.svg#Sharp Grotesk DB Cyr Book 20") format("svg"); }
 
 *{
@@ -14,6 +15,7 @@ nav{
     background-color: #b4d0e7;
     transition: 0.5s all 0s ease;
 }
+
 .container{
     display: flex;
     z-index: -1;
@@ -184,18 +186,18 @@ nav{
 }
 .block2 .con1{
     z-index: 0;
-    font-size: 110%;
+    font-size: medium;
     word-wrap: break-word;
     margin: 0px;
     margin-right: 40%;
     padding-right: 2%;
-    font-family: lato;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
 }
 .block2 .con2{
     cursor: pointer;
-    font-family: 'Lato';
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-weight:lighter;
-    font-size: large;
+    font-size: medium;
     background-color: #0061ff;
     margin-top: 30px;
     width: 9em;
@@ -213,7 +215,7 @@ nav{
     display: flex;
     margin: 20px;
     color: black;
-    font-size:medium;
+    font-size:small;
     padding: 0px;
     margin-left: -10px;
     content: 'No credit card needed';
@@ -229,19 +231,20 @@ nav{
     margin-left: 20px;
 }
 .block2 .con4{
-    font-family: lato;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     margin: 50px;
+    font-size: small;
     margin-bottom: 0px;
     margin-left: 0px;
 }
 .infoBlock{
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
     margin-top: 15%;
 }
 .infoGrid{
     display: grid;
-    font-family: lato;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     margin-top: 50px;
     grid-row-gap: 3%;
     grid-column-gap: 7%;
@@ -252,8 +255,8 @@ nav{
     width: 100%;
 }
 .infoBlock .infoHead{
-    font-family: lato;
-    font-size: 3.8rem;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 3rem;
     width: 100%;
     font-weight:700;
 }
@@ -261,27 +264,31 @@ nav{
     font-size: 2rem;
     margin-bottom: 25px;
 }
+.infoGrid h3{
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-weight: 900;
+    font-size:1.8rem;
+}
 .infoGrid div{
-    font-size:3vh;
+    font-size: 1rem;
     margin-top: 10%;
 }
 .honorBlock{
-   font-family: lato;
-   margin-top: 15%;
+   margin-top: 200px;
 }
 .honorBlock .hB1{
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     padding-bottom: 2%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 8%;
+    margin-right: 8%;
    font-weight: bold;
    margin-bottom: 0px;
    font-size: 3rem;
 }
 .honorBlock a{
-    margin-left: 10%;
-    margin-right: 10%;
-    padding: 40px;
-    padding-left: 0px;
+    margin-left: 8%;
+    margin-right: 8%;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-size: large;
     color:blue;
 }
@@ -347,19 +354,19 @@ nav{
      grid-row: 1/3;
 }
 .priceBlock{
-    margin-left:10%;
-    margin-right: 10%;
-    margin-top:100px;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-top:200px;
     z-index: 0; 
 }
 .priceBlock .priceHead{
-    font-family: lato;
-    font-size: 3rem;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 2.5rem;
     word-spacing: 5px;
     font-weight:700;
 }
 .priceBlock label{
-    font-family: 'Lato';
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-size: 1.1rem;
 }
 
@@ -377,6 +384,7 @@ nav{
     user-select: none;
   }
 .contain input{  
+    cursor: pointer;
     position: absolute;
     opacity: 0;
     cursor: pointer;
@@ -417,75 +425,107 @@ nav{
     display: flex;
     justify-content: space-between;
 }
-.priceBoxes .pbox1{
+.pbox1{
+    order: 2;
    display: grid;
    border: 1px solid rgb(221, 221, 221);
+   border-top: 0px;
    width: 30%;
    grid-gap: 10px;
 }
-.pbox1 .cont1{
+.pbox2{
+    order: 1;
+    margin-top: 30px;
+    display: grid;
+    border: 1px solid rgb(221, 221, 221);
+    border-top: 0px;
+    width: 30%;
+    grid-gap: 10px;
+ }
+.pbox3{
+    order: 3;
+    margin-top: 30px;
+    display: grid;
+    border: 1px solid rgb(221, 221, 221);
+    border-top: 0px;
+    width: 30%;
+    grid-gap: 10px;
+ }
+.cont1{
     background-color: black;
     color: white;
     padding-left: 20px;
+    padding-right: 20px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     font-weight: bold;
-    font-family: lato;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-size: larger;
 }
-.pbox1 .cont2{
-    font-family: lato;
+.cont2{
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-size: large;
     font-weight: bolder;
     margin-left: 28px;
     margin-right: 28px;
     margin-top: 20px;
 }
-.pbox1 .cont3{
-    font-size: 30px;
+
+.cont3{
+    font-size: 40px;
     margin-top: 5px;
-    font-family: lato;
+    font-weight: 100;
+    font-family: "Sharp Grotesk DB Cyr Book 20";
     margin-left: 28px;
     margin-right: 28px;
 }
-.pbox1 .cont4{
-    font-family: lato;
+.cont4{
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-size: large;
     margin-left: 28px;
     margin-right: 28px;
     margin-bottom: 30px;
     color: #637381;
 }
-.pbox1 hr{
+
+.priceBlock hr{
     width: 15%;
     height: 0px;
     margin-bottom: 25px;
     margin-left: 28px;
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(0, 0, 0);
     margin-right: 28px;
 }
-.pbox1 .cont5{
-    font-family: lato;
-    font-size: large;
+.cont5{
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 1rem;
+    display: flex;
     margin-left: 28px;
     margin-right: 28px;
     margin-bottom: 15px;
 }
 .cont5 img{
     padding-right:10px;
+    padding-top: 2px;
+    width: 18px;
+    height: 18px;
 }
-.pbox1 .cont6{
+.cont6{
     margin-left: 28px;
     margin-right: 28px;
     margin-top: 15px;
+    display: flex;
     margin-bottom: 20px;
-    font-family: lato;
-    font-size: large;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-size: 1rem;
 }
 .cont6 img{
     padding-right: 10px;
+    top:10px;
+    width: 18px;
+    height: 18px;
 }
-.pbox1 .cont7{
+.cont7{
     margin-top: 20px;
     margin-left: 28px;
     margin-right: 28px;
@@ -503,14 +543,31 @@ nav{
 }
 .pbox1 .cont7 button:hover{
     opacity: 0.8;
+    transition: 0.3s all 0s ease;
 }
-.pbox1 .cont8{
+.cont7 button{
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 0px;
+    font-family: lato;
+    cursor: pointer;
+    font-size: large;
+    border: none;
+    color:#0061ff;
+    background-color: white;
+    border: solid 1px #0061ff;
+}
+.cont7 button:hover{
+    box-shadow: 0px 0px 1px 2px #0061ff inset;
+    transition: 0.3s all 0s ease;
+}
+.cont8{
     margin-left: 28px;
     margin-top: 20px;
     margin-bottom: 30px;
 }
-
-.pbox1 .cont8 a{
+.cont8 a{
     color: #0061ff;
 }
 
@@ -579,6 +636,24 @@ nav{
          grid-row: 1/3;
     }
 }
+@media (max-width:900px){
+    .infoBlock{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .honorBlock .hB1{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .honorBlock a{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .priceBlock{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+}
 @media (max-width:800px){
     #togNew{
         margin-top: 30px;
@@ -592,9 +667,21 @@ nav{
     }
     .priceBoxes .pbox1{
         width: 100%;
+        order: 1;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .priceBoxes .pbox3{
+        width: 100%;
+        order: 2;
+        margin-bottom: 40px;
+    }
+    .priceBoxes .pbox2{
+        width: 100%;
         margin-bottom: 40px;
     }
     .mainBlock{
+        order: 3;
        height: auto;
        margin-top: 0px;
        margin-bottom: 0px;
@@ -613,11 +700,8 @@ nav{
     .priceBlock .priceHead{
         font-size: 2rem;
     }
-    .honorBlock{
-        margin-top: 96%;
-    }
     .honorBlock .hB1{
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
     .block3{
         display: none;
@@ -641,7 +725,8 @@ nav{
     }
     .infoGrid{
         grid-template-columns: repeat(auto-fill, minmax(100%, 2fr));
-        margin-bottom: 70vh;
+        grid-row-gap: 80px;
+        grid-column-gap: 80px;
     }
     .infoBlock .infoHead{
         font-size: 1.8rem;
@@ -650,6 +735,7 @@ nav{
         display: none;
     }
     .boxBlock{
+        margin-top: 10%;
         grid-template-columns: repeat(24,1fr);
         grid-template-rows: repeat(2,25vw);
     }
@@ -694,9 +780,6 @@ nav{
     }
     .priceBlock .priceHead{
         font-size: 2rem;
-    }
-    .honorBlock{
-        margin-top: 110%;
     }
     .box1{
        grid-column: 1/7;
