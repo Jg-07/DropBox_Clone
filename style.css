@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
 @font-face {font-family: "Sharp Grotesk DB Cyr Book 20"; src: url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.eot"); src: url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.woff") format("woff"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.svg#Sharp Grotesk DB Cyr Book 20") format("svg"); }
+@font-face {font-family: "Atlas Grotesk Web Light"; src: url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.eot"); src: url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.woff") format("woff"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.svg#Atlas Grotesk Web Light") format("svg"); }
 
 *{
     margin: 0px;
@@ -15,7 +16,6 @@ nav{
     background-color: #b4d0e7;
     transition: 0.5s all 0s ease;
 }
-
 .container{
     display: flex;
     z-index: -1;
@@ -302,6 +302,7 @@ nav{
     background-color:rgb(240, 240, 240);
     display: flex;
     font-size: 50px;
+    cursor: pointer;
     font-weight: bold;
     justify-content: center;
     align-items: center;
@@ -310,7 +311,7 @@ nav{
     width: 70%;
     display: block;
     margin: auto;
-     filter: invert(1);
+    filter: invert(1);
 }
 
 .box3 img{
@@ -350,8 +351,34 @@ nav{
  }
 .main{
     display: flex;
+    padding: 50px;
+    background-color: rgba(240, 240, 240, 0.589);
+    justify-content: left;
+    border: 1px rgb(201, 201, 201) solid;
+    align-items:flex-start;
+    flex-direction: column;
+    font-size: 1rem;
     grid-column: 9/17;
      grid-row: 1/3;
+}
+.main hr{
+    width: 3rem;
+    background-color: rgb(180, 180, 180);
+    margin-bottom: 40px;
+}
+.main .boxCon1{
+    margin-bottom: 30px;
+}
+.main .boxCon3{
+   font-family:  'Atlas Grotesk Web Light';
+   font-weight: medium;
+   line-height: 25px;
+}
+.main .boxCon4{
+    font-family: lato;
+    margin-top: 30px;
+    font-weight: lighter;
+    font-size: 1rem;
 }
 .priceBlock{
     margin-left:8%;
@@ -586,6 +613,10 @@ nav{
    }
 }
 
+.border{
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0.582) inset;
+}
+
 @media (min-width:800px){
     #togNew{
         display: none;
@@ -771,6 +802,12 @@ nav{
         grid-column: 19/25;
         grid-row: 2/3;
      }
+     .border{
+        box-shadow:none;
+    }
+    .box{
+        cursor:default;
+    }
 }
 
 @media (max-width:600px) {
@@ -828,6 +865,4 @@ nav{
     border-bottom: rgb(179, 179, 179) 1px solid;
     color: black;
 }
-.border{
-    border:rgba(255, 255, 255,0.4) 10px solid;
-}
+
