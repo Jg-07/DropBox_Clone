@@ -74,62 +74,36 @@ let box5 = document.querySelector('.box5');
 let box6 = document.querySelector('.box6');
 let box7 = document.querySelector('.box7');
 let box8 = document.querySelector('.box8');
+let carousel = document.querySelector('.carousel');
 let main = document.querySelector('.main');
-
-
-
-box1.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand1.svg" style="filter:grayscale();width: 150px;"></div>
-    <div class="boxCon2">
-        <hr>
-    </div>
-    <div class="boxCon3">
-        “Our team is constantly working across different countries, time zones and offices. A lot of
-        solutions can accommodate that now, but none make it as seamless as Dropbox and Dropbox Paper.”
-    </div>
-    <div class="boxCon4">Morten Thomsen, Global IT Lead</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box1.classList.add('border');
-})
-
-box2.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand2.svg" style="filter:grayscale();width: 150px;"></div>
-    <div class="boxCon2">
-        <hr>
-    </div>
-    <div class="boxCon3">
-        “Our users were accomplishing a lot of great work on Dropbox without any support. Deploying a
-        central account allowed that great work to continue, uninterrupted, in the most secure way
-        possible.”
-    </div>
-    <div class="boxCon4">Elias Eldayrie, Vice President & CIO</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box2.classList.add('border');
-})
-
-box3.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand3.svg" style="filter:grayscale();width: 100px;"></div>
-    <div class="boxCon2">
-        <hr>
-    </div>
-    <div class="boxCon3">
-        “With Dropbox, educators can collaborate securely with colleagues on any device and platform —
-        across campus and across the world.”
-    </div>
-    <div class="boxCon4">Tina Thorstenson, CISO</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box3.classList.add('border');
-})
-
-box4.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand4.svg"
-    style="filter:grayscale();width: 150px; margin-top: -30px;"></div>
+let i = 0;
+let boxMedia = [`<div class="carousel"></div><div class="boxCon1"><img src="Images/brand1.svg" style="filter:grayscale();"></div>
+<div class="boxCon2">
+    <hr>
+</div>
+<div class="boxCon3">
+    “Our team is constantly working across different countries, time zones and offices. A lot of
+    solutions can accommodate that now, but none make it as seamless as Dropbox and Dropbox Paper.”
+</div>
+<div class="boxCon4">Morten Thomsen, Global IT Lead</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand3.svg" style="filter:grayscale();"></div>
+<div class="boxCon2">
+    <hr>
+</div>
+<div class="boxCon3">
+    “With Dropbox, educators can collaborate securely with colleagues on any device and platform —
+    across campus and across the world.”
+</div>
+<div class="boxCon4">Tina Thorstenson, CISO</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand2.svg" style="filter:grayscale();"></div>
+<div class="boxCon2">
+    <hr>
+</div>
+<div class="boxCon3">
+    “Our users were accomplishing a lot of great work on Dropbox without any support. Deploying a
+    central account allowed that great work to continue, uninterrupted, in the most secure way
+    possible.”
+</div>
+<div class="boxCon4">Elias Eldayrie, Vice President & CIO</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand4.svg"
+style="filter:grayscale(); margin-top: -20px;"></div>
 <div class="boxCon2">
 <hr>
 </div>
@@ -138,16 +112,8 @@ box4.addEventListener('click', function () {
 digital space. Thankfully, we pretty much have three words internally that keep us creating great
 work: ‘It’s on Dropbox.’”
 </div>
-<div class="boxCon4">Chris R. Vaccaro, Director, Live Operations & Editor-in-Chief, Mobile</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box4.classList.add('border');
-})
-
-box5.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand5.svg"
-    style="filter:grayscale();width: 150px; margin-top: -10px;"></div>
+<div class="boxCon4">Chris R. Vaccaro, Director, Live Operations & Editor-in-Chief, Mobile</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand5.svg"
+style="filter:grayscale(); margin-top: -10px;"></div>
 <div class="boxCon2">
 <hr>
 </div>
@@ -156,16 +122,17 @@ box5.addEventListener('click', function () {
 email. Dropbox saves us a huge amount of miscommunication by allowing the latest versions of
 documents to be available to everybody at all times.”
 </div>
-<div class="boxCon4">Andrew Hall, Product Manager</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box5.classList.add('border');
-})
-
-box6.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand6.svg"
-    style="filter:grayscale();width: 150px; margin-top: -20px;"></div>
+<div class="boxCon4">Andrew Hall, Product Manager</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand7.svg" style="filter:grayscale();"></div>
+<div class="boxCon2">
+    <hr>
+</div>
+<div class="boxCon3">
+    “Hearst has more than 360 businesses. Dropbox makes a significant impact by providing a central hub
+    for our teams to access all of the content they need from anywhere, on any device. It has completely
+    changed the way these teams work.”
+</div>
+<div class="boxCon4">Nicole D’Antuono, VP of Employee Applications</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand6.svg"
+style="filter:grayscale(); margin-top: -20px;"></div>
 <div class="boxCon2">
 <hr>
 </div>
@@ -173,33 +140,8 @@ box6.addEventListener('click', function () {
 “We’ve always had a global presence, but before Dropbox, we couldn’t be as spread out as we are now.
 Dropbox makes our employees feel like they’re all in the same office.”
 </div>
-<div class="boxCon4">Daniel Jiménez, Head of Mobile Product & Design</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box6.classList.add('border');
-})
-
-box7.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand7.svg" style="filter:grayscale();width: 150px;"></div>
-    <div class="boxCon2">
-        <hr>
-    </div>
-    <div class="boxCon3">
-        “Hearst has more than 360 businesses. Dropbox makes a significant impact by providing a central hub
-        for our teams to access all of the content they need from anywhere, on any device. It has completely
-        changed the way these teams work.”
-    </div>
-    <div class="boxCon4">Nicole D’Antuono, VP of Employee Applications</div>`;
-    box.forEach(element => {
-        element.classList.remove('border');
-    });
-    box7.classList.add('border');
-})
-
-box8.addEventListener('click', function () {
-    main.innerHTML = `<div class="boxCon1"><img src="Images/brand8.svg"
-    style="filter:grayscale();width: 110px;margin-top: -20px;"></div>
+<div class="boxCon4">Daniel Jiménez, Head of Mobile Product & Design</div>`, `<div class="carousel"></div><div class="boxCon1"><img src="Images/brand8.svg"
+style="filter:grayscale();margin-top: -30px;"></div>
 <div class="boxCon2">
 <hr>
 </div>
@@ -208,7 +150,92 @@ box8.addEventListener('click', function () {
 achieved a return on investment of over 500% with Dropbox, while taking a giant step to modernize
 our IT strategy and enhance collaboration across our company.”
 </div>
-<div class="boxCon4" style="margin-top:20px;">Nichole Boatsman, IT Director</div>`;
+<div class="boxCon4" style="margin-top:20px;">Nichole Boatsman, IT Director</div>`]
+
+
+let myloop = setInterval(() => {
+    if (i < box.length - 1) {
+        i++;
+        box.forEach(element => {
+            element.classList.remove('border');
+        });
+    }
+    else {
+        i = 0
+        box.forEach(element => {
+            element.classList.remove('border');
+        });
+    }
+    box[i].classList.add('border');
+    main.innerHTML = boxMedia[i];
+}, 4000);
+
+box1.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[0].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box1.classList.add('border');
+})
+
+box2.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[2].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box2.classList.add('border');
+})
+
+box3.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[1].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box3.classList.add('border');
+})
+
+box4.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[3].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box4.classList.add('border');
+})
+
+box5.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[4].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box5.classList.add('border');
+})
+
+box6.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[6].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box6.classList.add('border');
+})
+
+box7.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[5].slice(28,);
+    box.forEach(element => {
+        element.classList.remove('border');
+    });
+    box7.classList.add('border');
+})
+
+box8.addEventListener('click', function () {
+    clearInterval(myloop);
+    main.innerHTML = boxMedia[7].slice(28,);
     box.forEach(element => {
         element.classList.remove('border');
     });
