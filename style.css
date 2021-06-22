@@ -6,6 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap');
 @font-face {font-family: "Sharp Grotesk DB Cyr Book 20"; src: url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.eot"); src: url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.woff") format("woff"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/8be7a3df6ed0f00122b5713e0b670a04.svg#Sharp Grotesk DB Cyr Book 20") format("svg"); }
 @font-face {font-family: "Atlas Grotesk Web Light"; src: url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.eot"); src: url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.woff") format("woff"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/43372a4ce8dc3abbca31595815be7cf3.svg#Atlas Grotesk Web Light") format("svg"); }
+@font-face {font-family: "Sharp Grotesk SmBold 10"; src: url("//db.onlinewebfonts.com/t/258e1a2b493e3c28fa92e6351c36f753.eot"); src: url("//db.onlinewebfonts.com/t/258e1a2b493e3c28fa92e6351c36f753.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/258e1a2b493e3c28fa92e6351c36f753.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/258e1a2b493e3c28fa92e6351c36f753.woff") format("woff"), url("//db.onlinewebfonts.com/t/258e1a2b493e3c28fa92e6351c36f753.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/258e1a2b493e3c28fa92e6351c36f753.svg#Sharp Grotesk SmBold 10") format("svg"); }
 
 *{
     margin: 0px;
@@ -160,19 +161,16 @@ nav{
     margin-top: 50px;
     margin-left: 10px;
     z-index: 0;
-    margin-bottom: 55px;
-    font-family: "Sharp Grotesk DB Cyr Book 20";
+    margin-bottom: 10px;
+    font-family: "Sharp Grotesk SmBold 10";
     display: inline-block;
-    -webkit-transform: scale(0.2, 1);
-    -moz-transform: scale(0.3, 1);
-    -o-transform: scale(0.3, 1);
-    transform: scale(1, 1.8);
-    font-size: 3rem;
+    font-size: 9rem;
     font-weight:bolder;
 }
 .block1{
     z-index: 0;
     margin: 10px;
+    line-height: 30px;
     margin-right: 30px;
     display: flex;
     flex-direction: row;
@@ -268,10 +266,12 @@ nav{
     font-family: 'Sharp Grotesk DB Cyr Book 20';
     font-weight: 900;
     font-size:1.8rem;
+    line-height: 35px;
 }
 .infoGrid div{
     font-size: 1rem;
     margin-top: 10%;
+    line-height: 25px;
 }
 .honorBlock{
    margin-top: 200px;
@@ -619,6 +619,74 @@ nav{
 .cont8 a{
     color: #0061ff;
 }
+.bottom1{
+    margin: 0;
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: #abcae4;
+}
+.bottom1 .b1{
+    font-size: 2.8rem;
+    width: 70%;
+    color: #550625;
+    padding-left: 8%;
+    font-family: 'Sharp Grotesk DB Cyr Book 20';
+    font-weight: bolder;
+}
+.bottom1 .b2{
+    display: flex;
+    justify-content: space-evenly;
+    padding-left: 20%;
+    padding-right: 8%;
+    width: 30%;
+    flex-direction: column;
+}
+.but{
+    background-color: whitesmoke;
+    width: 65%;
+    font-size: large;
+    cursor: pointer;
+    padding: 10px;
+    text-align: center;
+    font-family: lato;
+}
+.but:hover{
+    opacity: 0.9;
+}
+.txt{
+    text-align: left;
+    font-family:lato;
+}
+footer{
+    background-color: black;
+    padding-top: 200px;
+    flex-wrap: wrap;
+    font-family:'Sharp Grotesk DB Cyr Book 20';
+    padding-bottom: 200px;
+    padding-left: 8%;
+    padding-right: 8%;
+    grid-column-gap: 12%;
+    grid-row-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items:left;
+}
+.foot1{
+    display: flex;
+    grid-gap: 20px;
+    flex-direction: column;
+}
+.foot1 a{
+    color: white;
+    font-family: lato;
+    text-decoration: none;
+}
+.foot1 a:hover{
+    text-decoration: underline;
+}
 
 @keyframes fade{
    0%{
@@ -657,6 +725,15 @@ nav{
     }
 }
 @media (max-width:1020px) {
+    .bottom1 .b1{
+        font-size: 1.6rem;
+    }
+    .bottom1 .b2{
+        grid-gap: 10px;
+    }
+    .but{
+        width: 100%;
+    }
     .boxBlock{
         grid-template-columns: repeat(24,1fr);
         grid-template-rows: repeat(3,25vw);
@@ -742,8 +819,29 @@ nav{
     .main .boxCon4{
         font-size: 1.8vw;
     }
+    footer{
+        justify-content: space-between;
+        justify-items: left;
+    }
 }
 @media (max-width:800px){
+    .bottom1{
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .bottom1 .b1{
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    .bottom1 .b2{
+        grid-gap: 20px;
+        padding-top: 30px;
+        padding-left: 8%;
+    }
+    .but{
+        width: 100%;
+    }
     #togNew{
         margin-top: 30px;
         padding: 20%;
@@ -776,7 +874,7 @@ nav{
        margin-bottom: 0px;
     }
     .mainBlock .blockHead{
-        font-size:30px;
+        font-size:4rem;
         margin-left: 10px;
         margin-bottom: 12%;
     }
@@ -869,15 +967,28 @@ nav{
 }
 
 @media (max-width:600px) {
+    .bottom1{
+        grid-gap: 10px;
+    }
+    .bottom1 .b1{
+        font-size: 1.5rem;
+    }
+    .txt{
+        font-size: 0.9rem;
+    }
     .infoBlock{
         margin-left: 10%;
         margin-right: 10%;
     }
     .honorBlock .hB1{
         margin-left: 10%;
+        word-spacing: -1px;
+        letter-spacing: -1px;
+        font-size: 1.65rem;
         margin-right: 10%;
     }
     .honorBlock a{
+        font-size: 1rem;
         margin-left: 10%;
         margin-right: 10%;
     }
@@ -890,7 +1001,7 @@ nav{
         grid-template-rows: repeat(4,50vw);
     }
     .priceBlock .priceHead{
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
     .box1{
        grid-column: 1/7;
