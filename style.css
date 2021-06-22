@@ -164,7 +164,7 @@ nav{
     margin-bottom: 10px;
     font-family: "Sharp Grotesk SmBold 10";
     display: inline-block;
-    font-size: 7.5rem;
+    font-size: 7.50rem;
     font-weight:bolder;
 }
 .block1{
@@ -669,7 +669,7 @@ footer{
     padding-bottom: 200px;
     padding-left: 8%;
     padding-right: 8%;
-    grid-column-gap: 10%;
+    grid-column-gap: 10.0%;
     grid-row-gap: 50px;
     display: flex;
     flex-wrap: wrap;
