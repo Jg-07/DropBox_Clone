@@ -164,7 +164,7 @@ nav{
     margin-bottom: 10px;
     font-family: "Sharp Grotesk SmBold 10";
     display: inline-block;
-    font-size: 9rem;
+    font-size: 7.5rem;
     font-weight:bolder;
 }
 .block1{
@@ -221,6 +221,7 @@ nav{
 }
 .block2 .con3 img{
    width: 60px;
+   margin-top: -10px;
    transform: rotateZ(90deg);
 }
 .block2 .con3{
@@ -629,7 +630,7 @@ nav{
     background-color: #abcae4;
 }
 .bottom1 .b1{
-    font-size: 2.8rem;
+    font-size: 2.5rem;
     width: 70%;
     color: #550625;
     padding-left: 8%;
@@ -668,7 +669,7 @@ footer{
     padding-bottom: 200px;
     padding-left: 8%;
     padding-right: 8%;
-    grid-column-gap: 12%;
+    grid-column-gap: 10%;
     grid-row-gap: 50px;
     display: flex;
     flex-wrap: wrap;
