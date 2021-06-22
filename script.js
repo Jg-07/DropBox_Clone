@@ -47,7 +47,7 @@ window.onscroll = function () {
 }
 arrow.addEventListener('click', function () {
     window.scrollTo({
-        top: 700,
+        top: 800,
         behavior: "smooth",
     })
 });
