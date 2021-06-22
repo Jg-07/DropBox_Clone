@@ -43,6 +43,7 @@ nav{
     font-stretch:20px;
     font-size: x-large;
     background-color: white;
+    color: black;
     margin: 20px;
     align-items: center;
  }
@@ -619,6 +620,7 @@ nav{
 }
 .cont8 a{
     color: #0061ff;
+    font-family: lato;
 }
 .bottom1{
     margin: 0;
