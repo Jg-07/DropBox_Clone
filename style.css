@@ -1044,6 +1044,9 @@ footer{
 .hidden{
     display: none;
 }
+.stopOverflow{
+    overflow: hidden;
+}
 .colChange1{
     background: #0061ff;
     color: white;
