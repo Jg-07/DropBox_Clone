@@ -9,7 +9,7 @@
    The basic objective of making this project is to learn the power of Basic front-end tools like JS,HTML & CSS. Without using any addtional frameworks. Through this project we can learn some concepts like CSS grids ,Media Queries,Responsiveness, basic HTML tags and also Document object model in JavaScript.
    I have also made some significant changes to the UI section of the original page in my clone in-order to provide better responsiveness and User experience.Hope you would love my work.
    
-   👩‍💻** Please provide a star⭐ to the repo which could be a big support🙌 to many creaters🤓 like me **
+   👩‍💻**Please provide a star⭐ to the repo which could be a big support🙌 to many creaters🤓 like me**
 </p>
 
 ## Improve my work : 🤗
